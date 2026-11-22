@@ -239,34 +239,34 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
       {/* 02. Header Container */}
       <div className="w-full bg-white dark:bg-[#151619] transition-colors">
-        <div className="max-w-[1200px] mx-auto border-l border-r border-[#DCE1EA] dark:border-[#27292E] px-4 xs:px-6 sm:px-10 lg:px-12 pt-14 sm:pt-20 pb-10 sm:pb-12 transition-colors">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+        <div className="max-w-[1200px] mx-auto border-l border-r border-[#DCE1EA] dark:border-[#27292E] px-4 xs:px-6 sm:px-10 lg:px-12 pt-8 sm:pt-14 pb-5 sm:pb-8 transition-colors">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 pb-1">
             
             {/* Left: Headline & Badge */}
             <div className="flex flex-col items-start max-w-2xl">
-              <div className="mb-3.5 sm:mb-4">
+              <div className="mb-2.5 sm:mb-3.5">
                 <TechnicalLabel>INTERACTIVE VISUALIZERS</TechnicalLabel>
               </div>
 
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-[42px] font-semibold tracking-[-0.03em] text-[#101828] dark:text-[#F8FAFC] leading-[1.12]">
+              <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-[36px] font-semibold tracking-[-0.03em] text-[#101828] dark:text-[#F8FAFC] leading-[1.15]">
                 Explore your disk with
-                <span className="block mt-1 text-[#174BFF] dark:text-[#3B82F6]">
+                <span className="block mt-0.5 sm:mt-1 text-[#174BFF] dark:text-[#3B82F6]">
                   multiple powerful views.
                 </span>
               </h2>
 
-              <p className="text-xs xs:text-sm sm:text-[15px] text-[#475467] dark:text-[#9EA2AD] leading-relaxed mt-3 max-w-lg font-normal">
+              <p className="text-xs xs:text-[13px] sm:text-[14.5px] text-[#475467] dark:text-[#9EA2AD] leading-relaxed mt-2 max-w-lg font-normal">
                 DiskSense gives you purpose-built visual perspectives to pinpoint heavy files, understand directory hierarchy, and inspect system storage.
               </p>
             </div>
 
             {/* Right: Architectural Subtitle & Interactive Status */}
-            <div className="lg:max-w-md lg:border-l lg:border-[#DCE1EA] lg:dark:border-[#27292E] lg:pl-6 pb-1 text-left">
-              <span className="text-[11px] font-mono text-[#94A3B8] dark:text-[#64748B] flex items-center gap-1.5 mb-2">
+            <div className="lg:max-w-md lg:border-l lg:border-[#DCE1EA] lg:dark:border-[#27292E] lg:pl-5 pb-1 text-left">
+              <span className="text-[10.5px] font-mono text-[#94A3B8] dark:text-[#64748B] flex items-center gap-1.5 mb-1.5">
                 <span className={`w-2 h-2 rounded-full ${isPaused ? "bg-amber-400" : "bg-emerald-500 animate-pulse"}`} />
                 {isPaused ? "Paused (hovering)" : "Interactive · Auto-cycling every 3s"}
               </span>
-              <p className="text-xs xs:text-sm text-[#475467] dark:text-[#9EA2AD] leading-relaxed font-normal">
+              <p className="text-[11px] xs:text-xs text-[#475467] dark:text-[#9EA2AD] leading-relaxed font-normal">
                 Click any visualizer in the window toolbar below to switch views instantly, or hover to pause and drill into specific directories.
               </p>
             </div>
@@ -289,44 +289,45 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
       {/* 04. Main Interactive Mockup Stage */}
       <div className="w-full bg-white dark:bg-[#151619] transition-colors">
-        <div className="max-w-[1200px] mx-auto border-l border-r border-[#DCE1EA] dark:border-[#27292E] px-4 xs:px-6 sm:px-10 lg:px-12 py-10 sm:py-16 transition-colors">
+        <div className="max-w-[1200px] mx-auto border-l border-r border-[#DCE1EA] dark:border-[#27292E] px-3 xs:px-6 sm:px-10 lg:px-12 py-6 sm:py-12 transition-colors">
           
           {/* Main App Window Shell */}
           <div className="w-full rounded-2xl border border-[#DCE1EA] dark:border-[#222530] bg-[#EFF4FE] dark:bg-[#07080A] shadow-2xl overflow-hidden select-none">
             
             {/* Windows 11 App Titlebar */}
-            <div className="h-8 bg-white dark:bg-[#0C0E12] border-b border-[#E2E8F0] dark:border-[#1E2028] px-3.5 flex items-center justify-between text-xs text-[#6B7280]">
+            <div className="h-7 sm:h-8 bg-white dark:bg-[#0C0E12] border-b border-[#E2E8F0] dark:border-[#1E2028] px-3 sm:px-3.5 flex items-center justify-between text-xs text-[#6B7280]">
               <div className="flex items-center gap-1.5">
-                <div className="w-4 h-4 rounded-full overflow-hidden shrink-0">
+                <div className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full overflow-hidden shrink-0">
                   <Image src="/app-icon.png" alt="Icon" width={16} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span className="font-bold text-[#1F2937] dark:text-[#E5E7EB] text-[11px]">DiskSense</span>
+                <span className="font-bold text-[#1F2937] dark:text-[#E5E7EB] text-[10.5px] sm:text-[11px]">DiskSense</span>
               </div>
-              <div className="flex items-center gap-2.5 text-[#9CA3AF]">
-                <Minus className="w-3 h-3" />
-                <Square className="w-2.5 h-2.5" />
-                <X className="w-3 h-3" />
+              <div className="flex items-center gap-2 sm:gap-2.5 text-[#9CA3AF]">
+                <Minus className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                <Square className="w-2 h-2 sm:w-2.5 sm:h-2.5" />
+                <X className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
               </div>
             </div>
 
             {/* DiskSense Header Bar: Brand, Drive Selector, Search, Actions */}
-            <div className="px-4 py-2.5 bg-white dark:bg-[#0A0B0E] border-b border-[#E2E8F0] dark:border-[#181A22] flex items-center justify-between gap-3">
+            <div className="px-3 sm:px-4 py-2 sm:py-2.5 bg-white dark:bg-[#0A0B0E] border-b border-[#E2E8F0] dark:border-[#181A22] flex items-center justify-between gap-2 sm:gap-3">
               {/* Left: Brand Identity & Drive Selector */}
-              <div className="flex items-center gap-3 shrink-0">
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full overflow-hidden shrink-0">
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                <div className="flex items-center gap-1.5 sm:gap-2">
+                  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full overflow-hidden shrink-0">
                     <Image src="/app-icon.png" alt="Icon" width={28} height={28} className="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <h1 className="text-xs font-black text-[#111827] dark:text-[#F8FAFC] leading-none">DiskSense</h1>
-                    <p className="text-[9px] font-semibold text-[#64748B] dark:text-[#94A3B8] mt-0.5">Know Your Storage</p>
+                    <h1 className="text-[11px] sm:text-xs font-black text-[#111827] dark:text-[#F8FAFC] leading-none">DiskSense</h1>
+                    <p className="text-[8.5px] sm:text-[9px] font-semibold text-[#64748B] dark:text-[#94A3B8] mt-0.5 hidden xs:block">Know Your Storage</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8FAFC] dark:bg-[#12141A] text-xs font-bold text-[#111827] dark:text-[#F8FAFC] border border-[#CBD5E1] dark:border-[#222530] shadow-2xs">
-                  <HardDrive className="w-3.5 h-3.5 text-[#2563EB]" />
-                  <span>C:\ Local Disk</span>
-                  <ChevronDown className="w-3 h-3 opacity-60 ml-0.5" />
+                <div className="flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#F8FAFC] dark:bg-[#12141A] text-[11px] sm:text-xs font-bold text-[#111827] dark:text-[#F8FAFC] border border-[#CBD5E1] dark:border-[#222530] shadow-2xs">
+                  <HardDrive className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#2563EB]" />
+                  <span>C:\</span>
+                  <span className="hidden xs:inline">Local Disk</span>
+                  <ChevronDown className="w-2.5 h-2.5 sm:w-3 sm:h-3 opacity-60 ml-0.5" />
                 </div>
               </div>
 
@@ -345,12 +346,12 @@ export const VisualizerShowcaseSection: React.FC = () => {
               </div>
 
               {/* Right: Rescan & Theme Pill */}
-              <div className="flex items-center gap-2 shrink-0">
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#2563EB] text-white text-xs font-bold shadow-xs">
+              <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                <div className="flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#2563EB] text-white text-[11px] sm:text-xs font-bold shadow-xs cursor-pointer">
                   <RotateCw className="w-3 h-3" />
-                  <span>Rescan</span>
+                  <span className="hidden xs:inline">Rescan</span>
                 </div>
-                <div className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#F8FAFC] dark:bg-[#12141A] border border-[#CBD5E1] dark:border-[#222530] text-xs font-bold text-[#111827] dark:text-[#F8FAFC]">
+                <div className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-xl bg-[#F8FAFC] dark:bg-[#12141A] border border-[#CBD5E1] dark:border-[#222530] text-[11px] sm:text-xs font-bold text-[#111827] dark:text-[#F8FAFC]">
                   <Moon className="w-3 h-3 text-[#2563EB]" />
                   <span className="hidden sm:inline">Dark</span>
                 </div>
@@ -358,7 +359,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
             </div>
 
             {/* Visualizer Switcher Horizontal Pills Toolbar */}
-            <div className="px-4 py-2 bg-white/70 dark:bg-[#07080A]/70 border-b border-[#E2E8F0] dark:border-[#181A22] flex items-center gap-1 overflow-x-auto text-xs font-bold">
+            <div className="px-3 sm:px-4 py-2 bg-white/70 dark:bg-[#07080A]/70 border-b border-[#E2E8F0] dark:border-[#181A22] flex items-center gap-1.5 overflow-x-auto scrollbar-none text-[11px] sm:text-xs font-bold">
               {TABS.map((tab) => {
                 const Icon = tab.icon;
                 const isActive = activeTab === tab.id;
@@ -370,17 +371,17 @@ export const VisualizerShowcaseSection: React.FC = () => {
                   <button
                     key={tab.id}
                     onClick={() => handleSelectTab(tab.id)}
-                    className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition-all cursor-pointer overflow-hidden ${
+                    className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 select-none ${
                       isActive
                         ? "bg-[#2563EB] text-white shadow-xs"
                         : "text-[#64748B] dark:text-[#94A3B8] hover:text-[#111827] dark:hover:text-white hover:bg-white dark:hover:bg-[#141620]"
                     }`}
                   >
-                    <Icon className="w-3.5 h-3.5" />
-                    <span>{tab.label}</span>
+                    <Icon className="w-3.5 h-3.5 shrink-0" />
+                    <span className="whitespace-nowrap shrink-0">{tab.label}</span>
                     {badgeCount !== undefined && badgeCount > 0 && (
                       <span
-                        className={`w-4 h-4 rounded-full text-[9px] flex items-center justify-center font-black ${
+                        className={`w-4 h-4 rounded-full text-[9px] flex items-center justify-center font-black shrink-0 ${
                           isActive
                             ? "bg-white text-[#2563EB]"
                             : "bg-blue-100 dark:bg-blue-900/60 text-[#2563EB] dark:text-[#93C5FD]"
@@ -392,7 +393,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
                     {/* Active timer progress line */}
                     {isActive && !isPaused && (
                       <div
-                        className="absolute bottom-0 left-0 h-0.5 bg-white/70 transition-all duration-75"
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-white/70 transition-all duration-75"
                         style={{ width: `${progress}%` }}
                       />
                     )}
@@ -924,29 +925,29 @@ export const VisualizerShowcaseSection: React.FC = () => {
               </div>
             ) : (
               /* STANDARD TWO-COLUMN STAGE (Visualizer on Left, FolderDetails on Right) */
-              <div className="p-3.5 sm:p-4 grid grid-cols-1 lg:grid-cols-12 gap-3.5 min-h-[460px]">
+              <div className="p-2.5 xs:p-3 sm:p-4 grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-3.5 min-h-[360px] sm:min-h-[460px]">
               
               {/* LEFT / CENTER PANEL: The Active Visualizer View (~72% width) */}
               <div className="lg:col-span-8 flex flex-col rounded-2xl bg-white dark:bg-[#0D0F14] border border-[#CBD5E1] dark:border-[#1E2028] shadow-xs overflow-hidden">
                 
                 {/* Panel Header: Path, Items count, Total size & Hide Details */}
-                <div className="px-4 py-3 border-b border-[#F1F5F9] dark:border-[#181A22] flex items-center justify-between">
+                <div className="px-3 sm:px-4 py-2 sm:py-3 border-b border-[#F1F5F9] dark:border-[#181A22] flex items-center justify-between">
                   <span className="font-extrabold text-sm sm:text-base text-[#111827] dark:text-[#F8FAFC]">
                     C:\
                   </span>
 
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
                     {activeTab !== "flow" && (
-                      <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-[#F8FAFC] dark:bg-[#161822] text-[#64748B] dark:text-[#94A3B8] border border-[#E2E8F0] dark:border-[#22242C]">
+                      <span className="text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded-md bg-[#F8FAFC] dark:bg-[#161822] text-[#64748B] dark:text-[#94A3B8] border border-[#E2E8F0] dark:border-[#22242C]">
                         {activeTab === "treemap" ? "24 items" : "39 items"}
                       </span>
                     )}
-                    <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-[#F8FAFC] dark:bg-[#161822] text-[#64748B] dark:text-[#94A3B8] border border-[#E2E8F0] dark:border-[#22242C]">
+                    <span className="text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded-md bg-[#F8FAFC] dark:bg-[#161822] text-[#64748B] dark:text-[#94A3B8] border border-[#E2E8F0] dark:border-[#22242C]">
                       403.1 GB
                     </span>
-                    <div className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#2563EB] text-white text-xs font-bold shadow-2xs">
+                    <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-lg bg-[#2563EB] text-white text-[11px] sm:text-xs font-bold shadow-2xs">
                       <PanelRightClose className="w-3 h-3" />
-                      <span>Hide Details</span>
+                      <span className="hidden xs:inline">Hide Details</span>
                     </div>
                   </div>
                 </div>
@@ -959,9 +960,9 @@ export const VisualizerShowcaseSection: React.FC = () => {
                     <div className="w-full text-left">
                       {/* Table Columns Header */}
                       <div className="grid grid-cols-12 px-3 py-2 text-[10.5px] font-semibold text-[#94A3B8] border-b border-[#F1F5F9] dark:border-[#181A22]">
-                        <span className="col-span-5">Name</span>
-                        <span className="col-span-2 text-right">Size</span>
-                        <span className="col-span-2 text-center">Percentage</span>
+                        <span className="col-span-6 sm:col-span-5">Name</span>
+                        <span className="col-span-3 sm:col-span-2 text-right pr-2 sm:pr-0">Size</span>
+                        <span className="col-span-3 sm:col-span-2 text-right sm:text-center">Percentage</span>
                         <span className="col-span-2 text-right hidden sm:block">Items</span>
                         <span className="col-span-1 text-center hidden sm:block">Last Modified</span>
                       </div>
@@ -979,7 +980,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
                             }`}
                           >
                             {/* Name + Icon */}
-                            <div className="col-span-5 flex items-center gap-2 min-w-0 pr-1">
+                            <div className="col-span-6 sm:col-span-5 flex items-center gap-2 min-w-0 pr-1">
                               {row.isDir ? (
                                 <Folder className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B] shrink-0" />
                               ) : (
@@ -991,12 +992,12 @@ export const VisualizerShowcaseSection: React.FC = () => {
                             </div>
 
                             {/* Size */}
-                            <span className="col-span-2 text-right font-mono font-bold text-[#111827] dark:text-[#F8FAFC]">
+                            <span className="col-span-3 sm:col-span-2 text-right pr-2 sm:pr-0 font-mono font-bold text-[#111827] dark:text-[#F8FAFC]">
                               {row.size}
                             </span>
 
                             {/* Percentage Pill */}
-                            <div className="col-span-2 flex justify-center">
+                            <div className="col-span-3 sm:col-span-2 flex justify-end sm:justify-center">
                               <span className={`text-[10px] font-bold font-mono px-2 py-0.5 rounded-full ${row.pillBg}`}>
                                 {row.pct}
                               </span>
@@ -1019,7 +1020,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
                   {/* MODE 2: TREEMAP (Exact layout from media_1794163346557_b84602fb.png) */}
                   {activeTab === "treemap" && (
-                    <div className="w-full h-[370px] rounded-xl overflow-hidden border border-[#CBD5E1] dark:border-[#222530] flex gap-1.5 p-1 bg-[#F8FAFC] dark:bg-[#0E1015] text-white">
+                    <div className="w-full h-[270px] xs:h-[310px] sm:h-[370px] rounded-xl overflow-hidden border border-[#CBD5E1] dark:border-[#222530] flex gap-1.5 p-1 bg-[#F8FAFC] dark:bg-[#0E1015] text-white">
                       
                       {/* COLUMN 1: Users (Big Blue Block, ~48% width) */}
                       <div className="w-[48%] h-full rounded-lg bg-[#3F5BEA] p-2 flex flex-col justify-between shadow-xs">
@@ -1162,11 +1163,11 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
                   {/* MODE 3: FLOW (Full-Height, Non-overlapping SVG Flow Canvas, 100% faithful to media_1794163521206_b7900cd9.jpg) */}
                   {activeTab === "flow" && (
-                    <div className="w-full h-[400px] sm:h-[430px] relative select-none overflow-hidden bg-white dark:bg-[#0D0F14] flex flex-col justify-between p-2">
+                    <div className="w-full h-[270px] xs:h-[320px] sm:h-[420px] relative select-none overflow-hidden bg-white dark:bg-[#0D0F14] flex flex-col justify-between p-2">
                       
                       {/* Responsive Full-Height SVG */}
                       <svg
-                        className="w-full h-[340px] sm:h-[370px]"
+                        className="w-full h-[230px] xs:h-[280px] sm:h-[360px]"
                         viewBox="0 0 650 370"
                         preserveAspectRatio="xMidYMid meet"
                       >
@@ -1348,24 +1349,24 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
                   {/* MODE 4: SKYLINE (Faithful 3D Isometric replica of media_1794163959477_edc7ddbc.png) */}
                   {activeTab === "skyline" && (
-                    <div className="w-full h-[400px] sm:h-[430px] p-4 flex flex-col justify-between bg-white dark:bg-[#0D0F14]">
+                    <div className="w-full h-[290px] xs:h-[330px] sm:h-[420px] p-2.5 sm:p-4 flex flex-col justify-between bg-white dark:bg-[#0D0F14]">
                       {/* Interior Title */}
                       <div className="text-left">
-                        <h4 className="text-sm sm:text-base font-extrabold text-[#111827] dark:text-[#F8FAFC]">
+                        <h4 className="text-xs sm:text-base font-extrabold text-[#111827] dark:text-[#F8FAFC]">
                           Storage Skyline
                         </h4>
-                        <p className="text-xs text-[#64748B] dark:text-[#94A3B8] mt-0.5">
+                        <p className="text-[11px] sm:text-xs text-[#64748B] dark:text-[#94A3B8] mt-0.5">
                           Each bar represents a folder. Height = size.
                         </p>
                       </div>
 
                       {/* Main 3D Skyline Stage with Platform Shelf */}
-                      <div className="relative flex-1 w-full flex flex-col justify-end pb-3">
+                      <div className="relative flex-1 w-full flex flex-col justify-end pb-2 sm:pb-3">
                         {/* Soft Frosted Shelf Platform Underneath matching screenshot */}
-                        <div className="absolute bottom-[42px] left-3 right-3 h-14 rounded-2xl bg-[#F1F5F9]/80 dark:bg-[#161922]/80 border border-[#E2E8F0]/80 dark:border-[#222632] pointer-events-none shadow-xs" />
+                        <div className="absolute bottom-[38px] sm:bottom-[42px] left-2 sm:left-3 right-2 sm:right-3 h-12 sm:h-14 rounded-2xl bg-[#F1F5F9]/80 dark:bg-[#161922]/80 border border-[#E2E8F0]/80 dark:border-[#222632] pointer-events-none shadow-xs" />
 
                         {/* 6 Isometric 3D Skyline Columns */}
-                        <div className="w-full flex items-end justify-around gap-2 sm:gap-4 px-2 z-10">
+                        <div className="w-full flex items-end justify-between sm:justify-around gap-1 sm:gap-4 px-1 sm:px-2 z-10 overflow-x-auto sm:overflow-visible pb-1 scrollbar-none">
                           {skylineBuildings.map((col, idx) => {
                             const depthX = 14;
                             const depthY = 10;
@@ -1479,7 +1480,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
 
                   {/* MODE 5: HOTSPOTS (Direct replica of real src/components/visualizers/SpaceHotspotsView.tsx) */}
                   {activeTab === "hotspots" && (
-                    <div className="w-full h-[400px] sm:h-[430px] p-4 flex flex-col justify-between bg-white dark:bg-[#0D0F14] overflow-hidden select-none">
+                    <div className="w-full h-[280px] xs:h-[320px] sm:h-[420px] p-2.5 sm:p-4 flex flex-col justify-between bg-white dark:bg-[#0D0F14] overflow-hidden select-none">
                       {/* Interior Header & Filter Pills */}
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-2 border-b border-[#F1F5F9] dark:border-[#181A22]">
                         <div className="text-left">
@@ -1578,7 +1579,7 @@ export const VisualizerShowcaseSection: React.FC = () => {
               </div>
 
               {/* RIGHT PANEL: FolderDetails Inspector (Faithful to media_1794163117314_4ece92e1.jpg) */}
-              <div className="lg:col-span-4 rounded-2xl bg-white dark:bg-[#0D0F14] border border-[#CBD5E1] dark:border-[#1E2028] shadow-xs p-5 flex flex-col justify-between text-left">
+              <div className="lg:col-span-4 rounded-2xl bg-white dark:bg-[#0D0F14] border border-[#CBD5E1] dark:border-[#1E2028] shadow-xs p-3.5 sm:p-5 flex flex-col justify-between text-left">
                 <div className="space-y-4">
                   {/* Folder Icon & Title Row */}
                   <div className="flex items-start gap-3.5">

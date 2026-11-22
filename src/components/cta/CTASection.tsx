@@ -96,33 +96,31 @@ export const CTASection: React.FC = () => {
           
           {/* Technical Label */}
           <div className="mb-5 sm:mb-6">
-            <TechnicalLabel>GET STARTED TODAY</TechnicalLabel>
+            <TechnicalLabel>TAKE BACK YOUR DISK</TechnicalLabel>
           </div>
 
           {/* ============================================================== */}
           {/* Main Interactive Headline with Smooth Morphing Icon + Text     */}
-          {/* (Exact match to media_1794215455535_fbe11d75.png)              */}
           {/* ============================================================== */}
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-semibold tracking-[-0.03em] text-[#101828] dark:text-[#F8FAFC] leading-[1.3] sm:leading-[1.35] max-w-4xl text-center select-none">
-            A tool to create visual{" "}
+            The fastest way to explore{" "}
             
-            {/* Pill 1: Themes -> Visualizers */}
+            {/* Pill 1: storage -> gigabytes */}
             <MorphingPill
-              defaultText="themes"
-              hoverText="visualizers"
+              defaultText="storage"
+              hoverText="gigabytes"
               defaultIcon={
-                /* 3D Stacked Theme Cards */
-                <span className="relative w-6 h-6 sm:w-7 sm:h-7 -rotate-12">
-                  <span className="absolute inset-0 bg-white dark:bg-[#2B303C] rounded-lg border border-[#CBD5E1] dark:border-[#3E4554] shadow-xs translate-x-0.5 -translate-y-0.5" />
-                  <span className="absolute inset-0 bg-[#0F141C] dark:bg-[#0A0D14] rounded-lg border border-[#2D3340] shadow-md flex items-center justify-center">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#2563EB] flex items-center justify-center">
-                      <span className="w-1 h-1 rounded-full bg-white" />
+                /* 3D Drive / Storage Disc */
+                <span className="relative w-6 h-6 sm:w-7 sm:h-7 -rotate-6">
+                  <span className="absolute inset-0 bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#020617] rounded-lg border border-[#334155] shadow-md flex items-center justify-center">
+                    <span className="w-3 h-3 rounded-full border border-sky-400/60 bg-sky-950/40 flex items-center justify-center">
+                      <span className="w-1 h-1 rounded-full bg-sky-400" />
                     </span>
                   </span>
                 </span>
               }
               hoverIcon={
-                /* 3D Treemap Grid Tile */
+                /* 3D Treemap Visualizer Grid */
                 <span className="relative w-6 h-6 sm:w-7 sm:h-7 rotate-0">
                   <span className="absolute inset-0 bg-[#2563EB] rounded-lg border border-[#1D4ED8] shadow-[0_3px_8px_rgba(37,99,235,0.4)] p-0.5 grid grid-cols-2 gap-0.5">
                     <span className="bg-white/90 rounded-[2px]" />
@@ -134,54 +132,50 @@ export const CTASection: React.FC = () => {
             />{" "}
             ,
             <br className="hidden sm:inline" />
-            {" "}customize{" "}
+            {" "}clean forgotten{" "}
 
-            {/* Pill 2: Spacing -> Leftovers */}
+            {/* Pill 2: dev caches -> leftovers */}
             <MorphingPill
-              defaultText="spacing"
+              defaultText="dev caches"
               hoverText="leftovers"
               defaultIcon={
-                /* 3D Yellow Ruler */
-                <span className="relative w-6 h-6 sm:w-7 sm:h-7 -rotate-30">
-                  <span className="absolute inset-0 bg-gradient-to-br from-[#FDE047] via-[#FACC15] to-[#EAB308] rounded-md border border-[#CA8A04] shadow-[0_3px_6px_rgba(202,138,4,0.35)] flex items-center justify-around px-1">
-                    <span className="w-px h-2.5 bg-[#854D0E]/60" />
-                    <span className="w-px h-1.5 bg-[#854D0E]/60" />
-                    <span className="w-px h-2.5 bg-[#854D0E]/60" />
-                    <span className="w-px h-1.5 bg-[#854D0E]/60" />
+                /* 3D Cache / Package Block */
+                <span className="relative w-6 h-6 sm:w-7 sm:h-7 -rotate-12">
+                  <span className="absolute inset-0 bg-gradient-to-br from-[#38BDF8] to-[#0284C7] rounded-lg border border-[#0369A1] shadow-[0_3px_8px_rgba(2,132,199,0.4)] flex items-center justify-center text-white">
+                    <span className="w-2.5 h-2.5 rounded-sm bg-white/90 rotate-45 shadow-2xs" />
                   </span>
                 </span>
               }
               hoverIcon={
-                /* 3D Amber Installer Box */
+                /* 3D Amber Sparkle / Cleaner Badge */
                 <span className="relative w-6 h-6 sm:w-7 sm:h-7 rotate-6">
-                  <span className="absolute inset-0 bg-gradient-to-br from-[#FB923C] to-[#EA580C] rounded-lg border border-[#C2410C] shadow-[0_3px_8px_rgba(234,88,12,0.4)] flex items-center justify-center text-white">
-                    <span className="w-2.5 h-2.5 rounded-sm bg-white/90 shadow-2xs rotate-45" />
+                  <span className="absolute inset-0 bg-gradient-to-br from-[#FB923C] to-[#EA580C] rounded-lg border border-[#C2410C] shadow-[0_3px_8px_rgba(234,88,12,0.4)] flex items-center justify-center text-white font-black text-[11px]">
+                    ✓
                   </span>
                 </span>
               }
             />{" "}
-            , and build
+            , and reclaim
             <br className="hidden sm:inline" />
-            {" "}interfaces with{" "}
+            {" "}your drive with{" "}
 
-            {/* Pill 3: Grok -> DiskSense */}
+            {/* Pill 3: confidence -> DiskSense */}
             <MorphingPill
-              defaultText="Grok"
+              defaultText="confidence"
               hoverText="DiskSense"
               defaultIcon={
-                /* 3D Glossy Obsidian Sphere (Matching Grok in image) */
+                /* 3D Privacy Shield */
                 <span className="relative w-6 h-6 sm:w-7 sm:h-7">
-                  <span className="absolute inset-0 bg-gradient-to-b from-[#1E232E] to-[#05070A] rounded-full border border-white/25 shadow-[0_4px_8px_rgba(0,0,0,0.5)] flex items-center justify-center gap-0.5">
-                    <span className="w-1.5 h-2 rounded-full bg-white shadow-[0_0_4px_white]" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-white/90 shadow-[0_0_3px_white]" />
+                  <span className="absolute inset-0 bg-gradient-to-b from-[#10B981] to-[#047857] rounded-full border border-emerald-300/40 shadow-[0_4px_8px_rgba(4,120,87,0.4)] flex items-center justify-center text-white">
+                    <span className="w-2 h-2.5 rounded-t-sm border-2 border-white border-b-0 -mt-0.5" />
                   </span>
                 </span>
               }
               hoverIcon={
-                /* 3D Glowing Cyan Shield */
+                /* 3D Glowing Cyan DiskSense Orb */
                 <span className="relative w-6 h-6 sm:w-7 sm:h-7 rotate-0">
-                  <span className="absolute inset-0 bg-gradient-to-b from-[#06B6D4] to-[#0891B2] rounded-full border border-cyan-300/50 shadow-[0_0_10px_rgba(6,182,212,0.5)] flex items-center justify-center text-white">
-                    <span className="w-2 h-2.5 rounded-t-sm border-2 border-white border-b-0 -mt-0.5" />
+                  <span className="absolute inset-0 bg-gradient-to-b from-[#06B6D4] to-[#0891B2] rounded-full border border-cyan-300/60 shadow-[0_0_12px_rgba(6,182,212,0.6)] flex items-center justify-center text-white font-mono font-black text-[10px]">
+                    DS
                   </span>
                 </span>
               }
@@ -190,10 +184,10 @@ export const CTASection: React.FC = () => {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xs xs:text-[14px] sm:text-base text-[#475467] dark:text-[#9EA2AD] leading-relaxed max-w-[560px] mt-6 sm:mt-7 mb-7 sm:mb-8 font-normal transition-colors px-1">
-            DiskSense gives you a clear picture of your storage. Discover large files,
-            understand disk usage, and find forgotten installation files — all processed
-            locally on your Windows PC.
+          <p className="text-xs xs:text-[14px] sm:text-base text-[#475467] dark:text-[#9EA2AD] leading-relaxed max-w-[600px] mt-6 sm:mt-7 mb-7 sm:mb-8 font-normal transition-colors px-1">
+            Stop guessing what's eating your C: drive. Scan in seconds, drill into your largest consumers,
+            and wipe gigabytes of forgotten build artifacts, Docker images, and installer leftovers —
+            all processed 100% locally on your PC.
           </p>
 
           {/* ============================================================== */}
@@ -219,7 +213,7 @@ export const CTASection: React.FC = () => {
           {/* Small Subtext / Badge (from Hero section) */}
           <div className="flex items-center gap-1.5 text-[10.5px] xs:text-xs text-[#667085] dark:text-[#9EA2AD] transition-colors">
             <CheckSquare className="w-3 h-3 xs:w-3.5 xs:h-3.5 text-[#174BFF] dark:text-[#3B82F6]" />
-            <span>No credit card required • 100% Local processing • Built for Windows</span>
+            <span>Instant scan • 100% Local & Private • Zero telemetry • Windows 10/11</span>
           </div>
 
         </div>
